@@ -5,7 +5,7 @@
             <p class="address text-gray-600 text-sm">{{ address }}</p>
         </div>
         <div v-show="!dashboardPage">
-            <h1 class="font-sans text-xl font-semibold">{{ title }}</h1>
+            <h1 class="font-sans text-2xl font-semibold">{{ title }}</h1>
         </div>
     </div>
 </template>

@@ -1,18 +1,57 @@
 <template>
-    <div class=" flex bg-white">
+    <router-link to="/empty" >
+        <div :style="rounded" class="flex p-4 w-full h-16 font-medium bg-white justify-between items-center">
+            <!-- <img :src="require(`../assets/icons/${svgId}`)" class="w-2 h-2" /> -->
+            <p>{{ name }}</p>
+            <div class = "flex justify-end gap-4">
+                <div v-show="countShow" class=" bg-blue-100 text-blue-600 px-4 py-2 rounded-full">{{ count }}</div>
+                <img :src="rightArrow" class="w-2" />
+            </div>
+        </div>
+    </router-link>
 
-    </div>
 </template>
 
 <script>
-import { } from "@vue-hero-icons/outline"
 
 export default {
+    name: 'ListItem',
     props: {
-        name: String
+        svgId: String,
+        name: String,
+        count: Number,
+        placement: {
+            String,
+            default: ''
+        },
+    },
+    data(){
+        return {
+            rightArrow: require('../assets/icons/arrowRight.svg'),
+        }
     },
     components:{
-    }
+    },
+    computed:{
+        countShow(){
+            if(this.count != 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        },
+        rounded(){
+            if(this.placement == "first"){
+                return "border-top-left-radius: 1rem; border-top-right-radius: 1rem;";
+            }
+            else if(this.placement == "last"){
+                return "border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;";
+            }
+            else{
+                return "border-radius: 0rem";
+            }
+        }
+    },
 }
-
 </script>

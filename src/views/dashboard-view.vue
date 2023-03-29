@@ -1,6 +1,6 @@
 <template>
     <Header name="Harsh" address="Chandigarh University" title="Dashboard" />
-    <div class="container px-8 ">
+    <div class="flex flex-col px-8 ">
         <Summary beneficiaries="157" />
         <Link />
         <Cases />
