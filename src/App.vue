@@ -2,7 +2,7 @@
   <div class="container bg-gray-100">
     <router-view></router-view>
   </div>
-  <Footer/>
+  <Footer class=" sticky bottom-0" />
 </template>
 
 <script>
