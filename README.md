@@ -16,3 +16,4 @@ npm run serve
 ![Screenshot](https://github.com/harshtandiya/intenship-task-frappe-harsh/blob/master/Screenshot%202023-03-30%20142626.png)
 
 ### Empty Page
+![Screenshot](https://github.com/harshtandiya/intenship-task-frappe-harsh/blob/master/Screenshot%202023-03-30%20143245.png)
