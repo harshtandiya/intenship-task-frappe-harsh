@@ -12,4 +12,4 @@ npm run serve
 
 ## Screenshot of the created screen UI
 
-!(https://github.com/harshtandiya/internship-task-frappe-harsh/blob/master/Screenshot%202023-03-30%20142626.png)
+![Screenshot](https://github.com/harshtandiya/intenship-task-frappe-harsh/blob/master/Screenshot%202023-03-30%20142626.png)
