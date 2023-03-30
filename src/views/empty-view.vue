@@ -1,6 +1,6 @@
 <template>
     <Header title="Empty Page"/>
-    <div class="flex h-full w-full items-center justify-center p-20  font-medium underline">
+    <div class="h-full w-full flex items-center justify-center p-20  font-medium underline">
         <router-link to="/">
             <p>Go Back</p>
         </router-link>

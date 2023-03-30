@@ -1,8 +1,10 @@
 <template>
     <router-link to="/empty" >
         <div :style="rounded" class="flex p-4 w-full h-16 font-medium bg-white justify-between items-center">
-            <!-- <img :src="require(`../assets/icons/${svgId}`)" class="w-2 h-2" /> -->
-            <p>{{ name }}</p>
+            <div class="flex justify-start gap-4">
+                <SvgIcon svgId="SVG"/>
+                <p>{{ name }}</p>
+            </div>
             <div class = "flex justify-end gap-4">
                 <div v-show="countShow" class=" bg-blue-100 text-blue-600 px-4 py-2 rounded-full">{{ count }}</div>
                 <img :src="rightArrow" class="w-2" />
@@ -13,16 +15,18 @@
 </template>
 
 <script>
+import SvgIcon from './SvgIcon.vue'
 
 export default {
     name: 'ListItem',
     props: {
+        type: String,
         svgId: String,
         name: String,
         count: Number,
         placement: {
             String,
-            default: ''
+            default: ""
         },
     },
     data(){
@@ -31,6 +35,7 @@ export default {
         }
     },
     components:{
+        SvgIcon,
     },
     computed:{
         countShow(){
@@ -51,6 +56,9 @@ export default {
             else{
                 return "border-radius: 0rem";
             }
+        },
+        SVG(){
+            return this.svgId
         }
     },
 }
