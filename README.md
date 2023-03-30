@@ -10,15 +10,9 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Screenshot of the created screen UI
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Dashboard Page
+![Screenshot](https://github.com/harshtandiya/intenship-task-frappe-harsh/blob/master/Screenshot%202023-03-30%20142626.png)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Empty Page
